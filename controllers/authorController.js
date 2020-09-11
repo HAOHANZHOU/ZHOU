@@ -6,7 +6,7 @@ const Author = mongoose.model("author");
 
 // function to handle a request to get all authors
 const getAllAuthors = async (req, res) => {
-    
+  res.send("Working on this feature");
   try {
     const all_authors = await Author.find();
     return res.send(all_authors);
