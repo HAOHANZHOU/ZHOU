@@ -1,4 +1,7 @@
 // Function to handle a request to a particular author
+const getAuthorByID2 = (req, res) => {
+    res.send("require author");
+};
 const getAuthorByID = (req, res) => {
     // search for author in the database via ID
     var id = req.params.id;
@@ -30,6 +33,7 @@ const getAuthorByID = (req, res) => {
     };
     module.exports = {
         getAuthorByID,
+        getAuthorByID2,
     };
 
     
