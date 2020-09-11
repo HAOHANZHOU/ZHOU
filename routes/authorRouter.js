@@ -11,7 +11,7 @@ const routeController = require('../controllers/routeController.js');
 // i.e. get all authors
 authorRouter.get('/', (req, res) => authorController.getAllAuthors(req, res));
 
-authorRouter.get('/:id', (req, res) => routeController.getAuthorByID(req, res));
+authorRouter.get('/:id', (req, res) => authorController.getAuthorByID(req, res));
 
 // export the router
 module.exports = authorRouter;
