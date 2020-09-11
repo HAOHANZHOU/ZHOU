@@ -10,7 +10,7 @@ mongoose.connect(MONGO_URL || "mongodb://localhost/info30005", {
  useCreateIndex: true,
  useUnifiedTopology: true,
  useFindAndModify: false,
- dbName: "libapp"
+ dbName: "mylibraryapp"
 });
 const db = mongoose.connection;
 db.on("error", err => {
@@ -21,4 +21,4 @@ db.once("open", async () => {
  console.log("Mongo connection started on " + db.host + ":" +
 db.port);
 });
-require("./Bruce");
+require("./author");
