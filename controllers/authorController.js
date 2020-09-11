@@ -3,7 +3,7 @@ const mongoose = require("mongoose");
 // import author model
 const Author = mongoose.model("author");
 
-    
+
 // function to handle a request to get all authors
 const getAllAuthors = async (req, res) => {
     
@@ -16,6 +16,7 @@ const getAllAuthors = async (req, res) => {
   }
 };
     
+  
 // function to modify author by ID
 const updateAuthor = async (req, res) => {
   res.send("Working on this feature");
