@@ -1,10 +1,9 @@
 const express = require('express')
 const app = express();
-//require('./modules');
+require('./models')
 // set up author routes
 const authorRouter = require('./routes/authorRouter');
 // GET home page
-print("hello");
 app.get('/', (req, res) => {
  res.send('<H1>Library System</H1>')
 });
